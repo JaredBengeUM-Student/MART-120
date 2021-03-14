@@ -1,0 +1,27 @@
+body{
+    background-image: url("../CSS/images/houseshow.jpeg");
+    background-color:#cccccc;
+    height: 50x;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.title1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: seagreen;
+    background-color: black;
+    
+}
+.title2{
+    font-family: 'Courier New', Courier, monospace;
+    color:steelblue;
+    background-color: black;
+}
+.content{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bolder;
+    color: whitesmoke;
+    background-color: black;
+    
+}
