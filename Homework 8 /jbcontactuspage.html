@@ -1,0 +1,60 @@
+<html>
+<title>Contact Us Page</title>
+<head>
+  <link rel="stylesheet" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+  <script>
+    function checkform()
+    {
+      var name;
+      name = document.getElementById("txtName").value;
+      if(name == "")
+      {
+        document.getElementById("txtName").style.backgroundColor = "red";
+        document.getElementById("txtName").focus();
+        document.getElementById("txtNameMessage").innerHTML = "* Required";
+        document.getElementById("txtNameMessage").style.color = "red"
+      }
+      else
+      {
+        document.getElementById("txtName").style.backgroundColor = "white";
+      }
+      var email;
+      email = document.getElementById("txtEmail").value;
+      if (email == "")
+      {
+        document.getElementById("txtEmail").style.backgroundColor = "red";
+        document.getElementById("txtEmail").focus();
+        document.getElementById("txtEmailMessage").innerHTML = "* Required";
+        document.getElementById("txtEmailMessage").style.color = "red"
+      }
+      else
+      {
+        document.getElementById("txtEmail").style.backgroundColor = "white"
+      }
+      var agree;
+      agree = document.getElementById("yes").checked;
+      if(agree == false)
+      {
+        window.alert("Please check the terms of agreement")
+    }
+    }
+  </script>
+  </head>
+  <body style="background-color:seagreen;" style="color:whitesmoke;">
+  <h1>Contact JMB</h1>
+    <p></p>
+        <p>Name: <input type="text" id="txtName">&nbsp;<span id="txtNameMessage"></span></p>
+        <p>Email Address: <input type="text" id="txtEmail">&nbsp;<span id="txtEmailMessage"></span></p>
+        <button class="btn btn-primary" id ="btnSubmit" onclick=checkform()>Submit My Info</button>
+    <p>Accept the Terms of Agreement</p>
+    <input type="checkbox" name="yes" id="yes" value="yes">Yes<br>
+    <input type="checkbox" name="no" id="no" value+="np">No<br>
+    <p><a href="jbhomepage.html" style="color:royalblue">Home Page</a></p>
+    <p><a href="jbsecondpage.html" style="color: royalblue">Bio Page</a></p>
+</body>
+
+</html>
